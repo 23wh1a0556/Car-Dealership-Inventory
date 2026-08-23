@@ -4,7 +4,8 @@ const { protect, adminOnly } = require("../middleware/auth");
 
 const router = express.Router();
 
-router.post("/", protect, async (req, res) => {
+// router.post("/", protect, async (req, res) => {
+  router.post("/", protect, adminOnly, async (req, res) => {
   try {
     const vehicle = await Vehicle.create(req.body);
     res.status(201).json(vehicle);
@@ -47,7 +48,8 @@ router.get("/search", async (req, res) => {
   }
 });
 
-router.put("/:id", protect, async (req, res) => {
+// router.put("/:id", protect, async (req, res) => {
+  router.put("/:id", protect, adminOnly, async (req, res) => {
   try {
     const vehicle = await Vehicle.findByIdAndUpdate(
       req.params.id,
