@@ -60,4 +60,4 @@ npm test
 - **How it was used:** ChatGPT was used to guide the development of the Car Dealership Inventory System, including project planning, frontend implementation, React and Tailwind CSS code, debugging, testing guidance, Git commands, and project documentation.
 - **How AI affected my development workflow:** ChatGPT helped me understand the project requirements, implement features faster, troubleshoot errors, improve the frontend interface, and organize the project according to the required deliverables.
 - **Review and understanding:** I reviewed and tested the AI-assisted code during development and modified the implementation where necessary. The final application was tested with the backend and frontend running together.
-- 
+
